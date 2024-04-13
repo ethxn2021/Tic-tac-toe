@@ -1,0 +1,136 @@
+#theGameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+#winner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        45deg
+        ,#20f756,#9bb69d);
+            background-image: linear-gradient(
+        45deg
+        , rgb(84, 202, 196), rgba(102, 255, 0, 0.781));
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: initial;
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    vertical-align:middle;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.cell {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.342) !important;
+}
+
+#reset {
+    margin-top: 50%;
+    margin-left: 33%;
+    background: #00dbde;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    height: 25px;
+    z-index: 10;
+}
+
+#reset:hover {
+    background:#505050; 
+}
+
+#reset:focus {
+    outline: none;
+}
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+
+}
+
+#player2 {
+    color: rgb(0, 0, 0);
+    font-size: 200%;
+    position: absolute;
+    left: 1000px;
+    top: 70px;
+}
+
+#◯ {
+    color: rgb(0, 0, 0);
+    font-size: 900%;
+    position: absolute;
+    left: 980px;
+    top: 90px;
+}
+
+#✕ {
+    color: rgb(0, 0, 0);
+    font-size: 900%;
+    position: absolute;
+    left: 190px;
+    top: 70px;
+}
+
+a {
+    position: absolute;
+    left: 600px;
+}
+
+#q1 {
+    position: absolute;
+    left: 500px;
+}
+
+#q3 {
+    position: absolute;
+    left: 700px;
+}
